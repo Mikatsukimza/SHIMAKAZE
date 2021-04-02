@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.changePass">
+
+
+
+        <EditText
+            android:id="@+id/changePass_oldPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/change_old_password"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <EditText
+        android:id="@+id/changePass_newPass2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/change_new_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/changePass_oldPass"
+        app:layout_constraintTop_toBottomOf="@+id/changePass_oldPass"
+        android:layout_marginRight="24dp" />
+
+    <EditText
+        android:id="@+id/changePass_newPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_marginRight="24dp"
+        android:hint="@string/change_new_password2"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/changePass_oldPass"
+        app:layout_constraintTop_toBottomOf="@+id/changePass_oldPass" />
+
+    <Button
+        android:id="@+id/btChangePass"
+        android:layout_width="99dp"
+        android:layout_height="58dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="28dp"
+        android:text="修改密码"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/changePass_newPass"
+        app:layout_constraintTop_toBottomOf="@+id/changePass_newPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

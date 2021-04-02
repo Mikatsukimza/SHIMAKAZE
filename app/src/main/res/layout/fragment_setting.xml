@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/setting_name"
+        android:layout_width="190dp"
+        android:layout_height="53dp"
+        android:gravity="center_vertical|left"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/setting_id"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:gravity="center_vertical|left"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/setting_name"
+        app:layout_constraintTop_toBottomOf="@+id/setting_name" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[8]" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E6E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_id"
+        app:layout_constraintVertical_bias="0.031"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/setting_changePass"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="@drawable/ll_customer_selector"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/setting_changePass_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/setting_changePass_text"
+            android:gravity="center_vertical|left"
+            android:text="修改密码"
+            android:textColor="#000000"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/setting_changePass_image2"
+            android:layout_width="32dp"
+            android:src="@drawable/right"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/ll_customer_selector"
+
+        app:layout_constraintTop_toBottomOf="@+id/setting_changePass"
+        tools:layout_editor_absoluteX="16dp">
+        <ImageView
+            android:id="@+id/setting_city_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/setting_city_text"
+            android:gravity="center_vertical|left"
+            android:text="设置城市"
+            android:textColor="#000000"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/setting_city_image2"
+            android:layout_width="32dp"
+            android:src="@drawable/right"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_historyDay"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:background="@drawable/ll_customer_selector"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/setting_city"
+        tools:layout_editor_absoluteX="0dp">
+        <ImageView
+            android:id="@+id/setting_historyDay_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/setting_historyDay_text"
+            android:gravity="center_vertical|left"
+            android:text="设置历史天数"
+            android:textColor="#000000"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/setting_historyDay_image2"
+            android:layout_width="32dp"
+            android:src="@drawable/right"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E6E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_historyDay"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <LinearLayout
+        android:id="@+id/setting_rememberPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@drawable/ll_customer_selector"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <CheckBox
+            android:id="@+id/setting_rememberPass_cb"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="记住密码"
+            android:textColor="#000000"
+            android:layout_marginLeft="44dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/setting_auLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ll_customer_selector"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/setting_rememberPass"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+
+        <CheckBox
+            android:id="@+id/setting_auLogin_cb"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="自动登录"
+            android:textColor="#000000"
+            android:layout_marginLeft="44dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E6E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_auLogin"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/setting_Logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/ll_customer_selector"
+        android:text="Logout"
+        android:textColor="#ff0000"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
